@@ -4,8 +4,8 @@ body {
     flex-flow: column;
     font-family: sans-serif;
     line-height: 25px;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     font-size: 23px;
     align-items: center;
     justify-content: center;
@@ -17,7 +17,7 @@ header {
     width: 100%;
 }
 
-.header>nav>div {
+.header > nav > div {
     background: white;
     display: flex;
     justify-content: space-between;
@@ -28,24 +28,23 @@ header {
     align-items: center;
     display: flex;
     flex-direction: column;
-    height: 80%;
+    min-height: 80vh; /* Altura mínima ajustada para o perfil */
     margin: 30px;
     width: 80%;
     justify-content: center;
     gap: 20px;
 }
 
-
 .perfil-detalhe {
     align-items: center;
     display: flex;
     flex-direction: column;
-    height: 20%;
+    min-height: 20vh; /* Altura mínima ajustada para detalhes */
     padding: 0 40px;
     text-align: center;
 }
 
-.perfil-detalhe>h1 {
+.perfil-detalhe > h1 {
     color: rgb(91, 168, 168);
     font-size: 70px;
     margin: 7px 0 15px;
@@ -54,21 +53,20 @@ header {
 .perfil-detalhe-2 {
     display: flex;
     flex-direction: row;
-    height: inherit;
     justify-content: space-between;
     margin: 10px;
     padding: 0 10%;
     width: 100%;
 }
 
-.perfil-detalhe-2>section {
+.perfil-detalhe-2 > section {
     max-height: 400px;
     min-width: 200px;
     padding: 30px;
     width: 100%;
 }
 
-section>p {
+section > p {
     margin-top: 5px;
 }
 
@@ -116,15 +114,13 @@ section>p {
     color: white;
     position: relative;
     text-align: center;
-    top: -100px;
-    z-index: 1;
+    margin-top: 100px;
 }
 
 .foto-perfil {
     border-radius: 50%;
     position: relative;
-    top: -100px;
-    z-index: 1;
+    margin-top: 20px;
 }
 
 footer {
@@ -137,7 +133,7 @@ footer {
     width: 100%;
 }
 
-footer>p {
+footer > p {
     color: white;
     text-align: center;
     width: 50%;
@@ -151,7 +147,6 @@ footer>p {
     float: right;
     height: 25px;
     margin-left: auto;
-    order: 2;
     position: absolute;
     right: 100px;
     top: 20px;
@@ -166,7 +161,6 @@ footer>p {
 }
 
 @media (min-width: 700px) {
-
     html,
     body {
         height: 100vh;
@@ -175,7 +169,7 @@ footer>p {
 
 @media (max-width: 700px) {
     .perfil-detalhe-2 {
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
     }
