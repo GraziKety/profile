@@ -19,7 +19,8 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    overflow-x: hidden;
+    overflow-x: hidden
+
 }
 
 header {
@@ -195,5 +196,11 @@ footer>p {
 
     .apresentacao {
         margin-top: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .perfil-1 {
+        width: 90%; /* Ajuste a largura para telas menores */
     }
 }
