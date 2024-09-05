@@ -1,24 +1,53 @@
-
- body {
+body {
     display: flex;
     flex-flow: column;
     align-items: center;
     font-family: sans-serif;
     line-height: 23px;
     background: rgb(242, 241, 241);
-    overflow-x: hidden;
+    overflow: hidden;
+    margin: 0;
+    /* Remove qualquer margem padrão */
+    padding: 0;
 }
 
-header {
+.header {
     width: 100%;
 }
+
 
 .header>nav>div {
     background: white;
     display: flex;
     justify-content: space-between;
     padding: 10px 35px;
+
 }
+
+
+.hamburguer {
+    background: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    float: right;
+    height: 25px;
+    margin-left: auto;
+    order: 2;
+    position: absolute;
+    right: 100px;
+    top: 20px;
+    width: 30px;
+    justify-content: space-around;
+    margin-top: -10px;
+}
+
+.hamburguer-linha {
+    background-color: #000000;
+    height: 3px;
+    width: 100%;
+}
+
 
 .perfil-1 {
     align-items: center;
@@ -37,7 +66,7 @@ header {
     display: flex;
     flex-direction: column;
     height: 20%;
-    
+
     text-align: center;
 }
 
@@ -103,8 +132,9 @@ section>p {
 .apresentacao {
     align-items: center;
     background: #e07102;
-    flex-direction: column;
     display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 
@@ -113,7 +143,7 @@ section>p {
     color: white;
     position: relative;
     text-align: center;
-    top: -100px;
+    top: -110px;
     z-index: 1;
 }
 
@@ -125,44 +155,25 @@ section>p {
 }
 
 footer {
-    align-items: center;
     background: rgb(49, 49, 49);
+    height: 150px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 100%;
+    box-sizing: border-box; /* padding e bordas na largura total */
+}
+
+footer > p {
+    color: white;
+    text-align: center;
+    margin: 0; /* Remove a margem padrão do <p> */
     
 }
 
-footer>p {
-    color: white;
-    text-align: center;
-    width: 50%;
-}
 
-.hamburguer {
-    background: none;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    float: right;
-    height: 25px;
-    margin-left: auto;
-    order: 2;
-    position: absolute;
-    right: 100px;
-    top: 20px;
-    width: 30px;
-    justify-content: space-around;
-}
 
-.hamburguer-linha {
-    background-color: #000000;
-    height: 3px;
-    width: 100%;
-}
-
-@media (min-width: 700px) {
+@media (min-width: 768px) {
 
     html,
     body {
@@ -170,7 +181,7 @@ footer>p {
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
     .perfil-detalhe-2 {
         flex-direction: row;
         flex-wrap: wrap;
@@ -186,8 +197,10 @@ footer>p {
     }
 }
 
+
 @media (max-width: 768px) {
     .perfil-1 {
-        width: 90%; /* Ajuste a largura para telas menores */
+        width: 90%;
+        /* Ajuste a largura para telas menores */
     }
 }
