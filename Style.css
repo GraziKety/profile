@@ -1,27 +1,12 @@
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    max-height: 100%;
-    
-}
 
-body {
-    max-width: 100%;
-    background: rgb(242, 241, 241);
+ body {
     display: flex;
     flex-flow: column;
+    align-items: center;
     font-family: sans-serif;
     line-height: 23px;
-    margin: 0px;
-    padding: 0px;
-    font-size: 23px;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    overflow-x: hidden
-
+    background: rgb(242, 241, 241);
+    overflow-x: hidden;
 }
 
 header {
@@ -52,14 +37,14 @@ header {
     display: flex;
     flex-direction: column;
     height: 20%;
-    padding: 0 40px;
+    
     text-align: center;
 }
 
 .perfil-detalhe>h1 {
     color: rgb(91, 168, 168);
     font-size: 70px;
-    margin: 7px 0 15px;
+    margin: 20px;
 }
 
 .perfil-detalhe-2 {
@@ -68,8 +53,7 @@ header {
     height: inherit;
     justify-content: space-between;
     margin: 10px;
-    padding: 0 10%;
-    width: 100%;
+    width: 90%;
 }
 
 .perfil-detalhe-2>section {
@@ -119,9 +103,11 @@ section>p {
 .apresentacao {
     align-items: center;
     background: #e07102;
-    display: flex;
     flex-direction: column;
+    display: flex;
+
 }
+
 
 .eu-sou {
     color: white;
@@ -143,9 +129,9 @@ footer {
     background: rgb(49, 49, 49);
     display: flex;
     flex-direction: column;
-    height: 20%;
     justify-content: center;
     width: 100%;
+    
 }
 
 footer>p {
