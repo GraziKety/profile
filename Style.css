@@ -5,12 +5,39 @@ body {
     font-family: sans-serif;
     line-height: 23px;
     background: rgb(242, 241, 241);
-    overflow-x: hidden
+    overflow-x: hidden;
+    margin: 0;
+    /* Remove margens padrão do body */
+    padding-top: 1cm;
+    /* Adiciona um padding para evitar sobreposição do conteúdo pela faixa fixa */
+}
 
+.manutencao {
+    background-color: purple;
+    height: 1.3cm;
+    /* Altura da faixa */
+    width: 100%;
+    /* Ocupa toda a largura da página */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Centraliza o conteúdo verticalmente */
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    /* Posiciona no topo da página */
+    left: 0;
+    /* Alinha à esquerda da página */
+    z-index: 1000;
+    /* Garante que a faixa fique acima de outros elementos */
+    color: white;
 }
 
 header {
     width: 100%;
+    padding: 0;
+    margin: 0;
+    /* Remover a margem superior, pois o padding-top no body já cria o espaço necessário */
 }
 
 .header>nav>div {
@@ -18,6 +45,14 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 10px 35px;
+}
+
+
+
+.menu {
+    cursor: pointer;
+    height: 60px;
+    width: 40px;
 }
 
 .perfil-1 {
@@ -31,7 +66,6 @@ header {
     gap: 20px;
 }
 
-
 .perfil-detalhe {
     align-items: center;
     display: flex;
@@ -42,7 +76,7 @@ header {
 }
 
 .perfil-detalhe>h1 {
-    color: rgb(91, 168, 168);
+    color: rgb(185, 84, 185);
     font-size: 70px;
     margin: 7px 0 15px;
 }
@@ -73,7 +107,7 @@ section>p {
 }
 
 .botao {
-    border-color: #e07102;
+    border-color: rgb(185, 84, 185);
     border-radius: 30px;
     border-style: solid;
     cursor: pointer;
@@ -85,7 +119,7 @@ section>p {
 }
 
 .botao:hover {
-    background-color: #e65a50;
+    background-color: rgb(185, 84, 185);
     color: white;
 }
 
@@ -103,7 +137,7 @@ section>p {
 
 .apresentacao {
     align-items: center;
-    background: #e07102;
+    background: rgb(185, 84, 185);
     display: flex;
     flex-direction: column;
 }
@@ -128,7 +162,7 @@ footer {
     background: rgb(49, 49, 49);
     display: flex;
     flex-direction: column;
-    height: 20%;
+    height: -50%;
     justify-content: center;
     width: 100%;
 }
@@ -136,29 +170,7 @@ footer {
 footer>p {
     color: white;
     text-align: center;
-    width: 50%;
-}
-
-.hamburguer {
-    background: none;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    float: right;
-    height: 25px;
-    margin-left: auto;
-    order: 2;
-    position: absolute;
-    right: 100px;
-    top: 20px;
-    width: 30px;
-    justify-content: space-around;
-}
-
-.hamburguer-linha {
-    background-color: #000000;
-    height: 3px;
-    width: 100%;
+    width: auto;
 }
 
 @media (min-width: 700px) {
@@ -187,6 +199,6 @@ footer>p {
 
 @media (max-width: 768px) {
     .perfil-1 {
-        width: 90%; /* Ajuste a largura para telas menores */
+        width: 90%;
     }
 }
