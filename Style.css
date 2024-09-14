@@ -10,10 +10,9 @@ body {
     /* Remove margens padrão do body */
     padding-top: 1cm;
     /* Adiciona um padding para evitar sobreposição do conteúdo pela faixa fixa */
-}
 
 .manutencao {
-    background-color: purple;
+    background-color: rgb(207, 113, 113);
     height: 1.3cm;
     /* Altura da faixa */
     width: 100%;
@@ -31,6 +30,14 @@ body {
     z-index: 1000;
     /* Garante que a faixa fique acima de outros elementos */
     color: white;
+}
+
+.logo {
+    
+        transform: translateY(5px); /* Ajuste o valor conforme necessário */
+        width: 50px;
+      
+      
 }
 
 header {
