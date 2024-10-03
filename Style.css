@@ -9,7 +9,9 @@ body {
     margin: 0;
     /* Remove margens padrão do body */
     padding-top: 1cm;
-    /* Adiciona um padding para evitar sobreposição do conteúdo pela faixa fixa */
+}
+
+/* Adiciona um padding para evitar sobreposição do conteúdo pela faixa fixa */
 
 .manutencao {
     background-color: rgb(207, 113, 113);
@@ -33,11 +35,17 @@ body {
 }
 
 .logo {
-    
-        transform: translateY(5px); /* Ajuste o valor conforme necessário */
-        width: 50px;
-      
-      
+
+    transform: translateY(5px);
+    /* Ajuste o valor conforme necessário */
+    width: 50px;
+}
+
+.titulo-formulario {
+    text-align: center;
+    /* Centraliza o texto */
+    margin-bottom: 20px;
+    /* Adiciona um espaçamento inferior */
 }
 
 header {
@@ -53,8 +61,6 @@ header {
     justify-content: space-between;
     padding: 10px 35px;
 }
-
-
 
 .menu {
     cursor: pointer;
@@ -178,6 +184,32 @@ footer>p {
     color: white;
     text-align: center;
     width: auto;
+}
+
+#contactForm {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+#contactForm button {
+    background-color: rgb(185, 84, 185);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 @media (min-width: 700px) {
