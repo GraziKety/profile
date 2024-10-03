@@ -45,8 +45,8 @@
     </footer>
     <script>
         document.getElementById("contactForm").addEventListener("submit", function (event) {
-            event.preventDefault(); // Previne o envio padrão do formulário
-
+            event.preventDefault(); // p/ nao recarregar a pag
+            
             const nome = document.getElementById("nome").value;
             const email = document.getElementById("email").value;
             const mensagem = document.getElementById("mensagem").value;
