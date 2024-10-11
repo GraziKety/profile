@@ -1,0 +1,123 @@
+body {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    font-family: sans-serif;
+    line-height: 23px;
+    background: rgb(242, 241, 241);
+    overflow-x: hidden;
+    margin: 0;
+    padding-top: 1cm;
+}
+
+.menu {
+    width: 50px;
+    cursor: pointer;
+}
+
+.aba-inicio,
+.aba-contato {
+    margin: 0 20px;
+    margin-top: 30px;
+    /* Adiciona espaço entre os títulos */
+    cursor: pointer;
+    /* Mantém o estilo de cursor como botão */
+}
+
+/*fundo para destacar */
+.aba-inicio,
+.aba-contato {
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.aba-inicio:hover,
+.aba-contato:hover {
+    background-color: rgba(185, 84, 185, 0.2);
+    /* Fundo ao passar o mouse */
+}
+
+.manutencao {
+    background-color: rgb(207, 113, 113);
+    height: 1.3cm;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    color: white;
+}
+
+.logo {
+    transform: translateY(5px);
+    width: 50px;
+    height: 50px;
+    margin-top: 10px
+   
+}
+
+header {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.header>nav>div {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    height: 12%;
+    align-items: center;
+}
+
+footer {
+    align-items: center;
+    background: rgb(49, 49, 49);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+}
+
+
+footer>p {
+    color: white;
+    text-align: center;
+    width: auto;
+}
+
+@media (min-width: 700px) {
+
+    html,
+    body {
+        height: 100vh;
+    }
+}
+
+@media (max-width: 700px) {
+    .perfil-detalhe-2 {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .perfil-detalhe {
+        padding-bottom: 50px;
+    }
+
+    .apresentacao {
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .perfil-1 {
+        width: 90%;
+    }

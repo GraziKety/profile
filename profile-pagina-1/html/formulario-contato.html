@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+    <link rel="stylesheet" href="../css/comum.css">
+    <link rel="stylesheet" href="../css/formulario-contato.css">
+    <link rel="icon" href="../imagens/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header class="header">
+        <div>
+            <label class="manutencao">Site em construção</label>
+        </div>
+        <nav>
+            <div>
+                <img class="logo" src="../imagens/logo-oficial/perfil-logo.jpg" alt="logomarca">
+                <h3 class="aba-inicio">Inicio</h3>
+                <h3 class="aba-contato">Contato</h3>
+                <img class="menu" src="../imagens/botao-menu/menu.svg" alt="menu">
+            </div>
+        </nav>
+    </header>
+
+    <main class="perfil-1">
+        <section>
+            <h2 class='titulo-formulario'>Preencha o Formulário</h2>
+            <form id="contactForm">
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo">
+                    <span class="error" id="nomeError"></span>
+                    <a class="aviso">Campo obrigatório</a>
+                </div>
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required
+                        placeholder="Insira um endereço de e-mail válido">
+                    <span class="error" id="emailError"></span>
+                    <a class="aviso">Digite um email válido</a>
+                </div>
+                <div>
+                    <label for="mensagem">Assunto:</label>
+                    <textarea id="mensagem" name="mensagem" rows="3" required
+                        placeholder="Motivo do contato"></textarea>
+                    <span class="error" id="mensagemError"></span>
+                    <a class="aviso">Campo obrigatório</a>
+                </div>
+
+                <button class="botao-enviar" type="submit">Enviar</button>
+
+                <div id="formularioEnviado" class="enviado"></div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+.titulo-formulario {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#contactForm {
+    width: 400px;
+    /* largura do formulário */
+    margin: 20px auto;
+    /* centraliza o formulário */
+    padding: 20px;
+    /* espaço interno */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+#contactForm input,
+#contactForm textarea {
+    width: calc(100% - 20px);
+    /* Ajusta a largura para evitar que fique grudado */
+    padding: 10px;
+    margin: 10px 0;
+    /* Margem vertical */
+    border-radius: 5px;
+    border: 1px solid #d3d3d3;
+    /* Borda cinza claro quando não está em foco */
+}
+
+#contactForm input:focus,
+#contactForm textarea:focus {
+    border-color: #999;
+    /* Cor da borda cinza médio quando está em foco */
+    outline: none;
+    /* Remove o contorno padrão */
+}
+
+#contactForm input::placeholder,
+#contactForm textarea::placeholder {
+    font-family: sans-serif;
+    /* ou a fonte que você estiver usando */
+    font-size: 14px;
+    /* ajuste o tamanho conforme necessário */
+    color: #aaa;
+    /* ajuste a cor conforme necessário */
+}
+
+#contactForm textarea {
+    resize: none;
+    /* Remove o mover da caixa de texto */
+}
+
+.botao-enviar {
+    display: block;
+    /* Faz o botão ser um bloco */
+    margin: 20px auto;
+    /* Centraliza horizontalmente */
+    background-color: transparent;
+    color: black;
+    border-color: rgb(185, 84, 185);
+    border-radius: 30px;
+    border-style: solid;
+    cursor: pointer;
+    font-size: 13px;
+    height: 50px;
+    padding: 10px 20px;
+    text-align: center;
+    width: 130px;
+}
+
+.botao-enviar:hover {
+    background-color: rgb(185, 84, 185);
+    color: white;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    display: none;
+    /*começa escondida*/
+}
+
+.enviado {
+    font-size: 14px;
+    display: none;
+    /* Começa escondida */
+    margin-top: 10px;
+    transition: opacity 0.5s;
+    /* Transição suave */
+}
+
+#formularioEnviado {
+    opacity: 1;
+    /* Inicia visível */
+    transition: opacity 0.5s;
+    /* Transição suave */
+    padding: 10px;
+    /* Espaçamento interno */
+    border-radius: 5px;
+    /* Bordas arredondadas */
+    text-align: center;
+    /* Centraliza o texto */
+}
+
+#formularioEnviado.success {
+    background-color: #d4edda;
+    /* Fundo verde claro */
+    color: black;
+    /* Texto preto */
+}
+
+#formularioEnviado.error {
+    background-color: #f8d7da;
+    /* Fundo vermelho claro */
+    color: black;
+    /* Texto preto */
+}
+
+.aviso {
+    color: red;
+    font-size: 13px;
+    visibility: hidden;
+}
+
+footer {
+    height: 80px;
+}
