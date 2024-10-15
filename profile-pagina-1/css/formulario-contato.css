@@ -116,6 +116,15 @@
     /* Texto preto */
 }
 
+.obrigatorio {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 0;
+ 
+}
+
+
+
 .aviso {
     color: red;
     font-size: 13px;

@@ -1,3 +1,4 @@
+/* Estilo base */
 body {
     display: flex;
     flex-flow: column;
@@ -9,33 +10,56 @@ body {
     margin: 0;
     padding-top: 1cm;
 }
+a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: black;
+}
 
-.menu {
+header {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.header > nav > div {
+    display: flex;
+    justify-content: flex-end; /* Alinha os itens à direita */
+    align-items: center;
+    padding: 10px;
+    background: white;
+    height: 12%;
+}
+
+/* Logo da empresa */
+.logo {
+    transform: translateY(5px);
     width: 50px;
-    cursor: pointer;
+    height: 50px;
+    margin-right: auto; /* Mantém a logo à esquerda */
 }
 
+/* Menu, aba-inicio e aba-contato alinhados à direita */
 .aba-inicio,
-.aba-contato {
-    margin: 0 20px;
-    margin-top: 30px;
-    /* Adiciona espaço entre os títulos */
+.aba-contato,
+.menu {
+    display: block;
+    margin-left: 20px; /* Adiciona espaçamento entre os itens */
     cursor: pointer;
-    /* Mantém o estilo de cursor como botão */
-}
-
-/*fundo para destacar */
-.aba-inicio,
-.aba-contato {
     padding: 5px 10px;
     border-radius: 5px;
     transition: background-color 0.3s;
 }
 
+/* Efeito de hover */
 .aba-inicio:hover,
 .aba-contato:hover {
-    background-color: rgba(185, 84, 185, 0.2);
-    /* Fundo ao passar o mouse */
+    background-color: rgba(185, 84, 185, 0.2); /* Fundo ao passar o mouse */
+}
+
+/* Menu estilo */
+.menu {
+    width: 50px;
+    cursor: pointer;
 }
 
 .manutencao {
@@ -53,29 +77,6 @@ body {
     color: white;
 }
 
-.logo {
-    transform: translateY(5px);
-    width: 50px;
-    height: 50px;
-    margin-top: 10px
-   
-}
-
-header {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-}
-
-.header>nav>div {
-    background: white;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    height: 12%;
-    align-items: center;
-}
-
 footer {
     align-items: center;
     background: rgb(49, 49, 49);
@@ -86,17 +87,15 @@ footer {
     height: 100px;
 }
 
-
-footer>p {
+footer > p {
     color: white;
     text-align: center;
     width: auto;
 }
 
+/* Responsividade */
 @media (min-width: 700px) {
-
-    html,
-    body {
+    html, body {
         height: 100vh;
     }
 }
@@ -121,3 +120,4 @@ footer>p {
     .perfil-1 {
         width: 90%;
     }
+}

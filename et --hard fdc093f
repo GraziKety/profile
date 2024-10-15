@@ -1,0 +1,28 @@
+[33md7d05a8[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m HEAD@{0}: reset: moving to HEAD~1
+[33mfdc093f[m HEAD@{1}: reset: moving to fdc093f
+[33md7d05a8[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m HEAD@{2}: reset: moving to HEAD~1
+[33mfdc093f[m HEAD@{3}: commit: Atualização da Página
+[33md7d05a8[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m HEAD@{4}: commit: Comentários
+[33mc7533c6[m HEAD@{5}: commit: Atualizando perfil
+[33mafa4a6a[m HEAD@{6}: commit: atualizando foto
+[33ma9a4774[m HEAD@{7}: commit: tirando aspas
+[33m7c463c2[m HEAD@{8}: commit: Diminuindo texto
+[33m515fa38[m HEAD@{9}: commit: mudança de texto
+[33m5e852a0[m HEAD@{10}: commit: ajustes css e html
+[33m0e9a6bb[m HEAD@{11}: commit: Desfazendo CSS
+[33m7654249[m HEAD@{12}: commit: Ajustes finais CSS
+[33me5aed4c[m HEAD@{13}: commit: Nova Alteração CSS
+[33m783357c[m HEAD@{14}: commit: CSS DNV
+[33m42634f0[m HEAD@{15}: commit: ALTERAÇÃO CSS
+[33m494bc28[m HEAD@{16}: commit: NOVA ATUALIZACAO CSS
+[33meb1318b[m HEAD@{17}: commit: CSS
+[33mf33a294[m HEAD@{18}: commit: Tentativa CSS
+[33m2345679[m HEAD@{19}: commit: NOME STYLE
+[33m43fde2d[m HEAD@{20}: commit: Mudanças HTML e CSS
+[33mbf39215[m HEAD@{21}: commit: Desfazendo alteração HMTL
+[33m59a6e5b[m HEAD@{22}: commit: Arrumando HTML
+[33m3bb40ec[m HEAD@{23}: commit: Alterando imagens no HTML
+[33mfc074ce[m HEAD@{24}: commit (merge): Alterando nome das imagens
+[33m86c70d5[m HEAD@{25}: commit: Alterando nome das imagens
+[33mbf06b62[m HEAD@{26}: Branch: renamed refs/heads/master to refs/heads/main
+[33mbf06b62[m HEAD@{28}: commit (initial): first commit

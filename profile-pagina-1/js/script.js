@@ -7,23 +7,27 @@ validacao.addEventListener("submit", function (event) {
 
     const nome = document.getElementById('nome');
     const email = document.getElementById('email');
+    const assunto = document.getElementById('assunto');
     const mensagem = document.getElementById('mensagem');
 
     // Erros
     const nomeError = document.getElementById('nomeError');
     const emailError = document.getElementById('emailError');
+    const assuntoError = document.getElementById('assuntoError');
     const mensagemError = document.getElementById('mensagemError');
     const formularioEnviado = document.getElementById('formularioEnviado'); // Mensagem de sucesso
 
     // Limpar mensagens anteriores
     nomeError.style.display = 'none';
     emailError.style.display = 'none';
+    assuntoError.style.display = 'none';
     mensagemError.style.display = 'none';
     formularioEnviado.style.display = 'none'; // Esconder mensagem anterior
 
     // Limpar bordas vermelhas
     nome.style.borderColor = '';
     email.style.borderColor = '';
+    assunto.style.borderColor = '';
     mensagem.style.borderColor = '';
 
     let temErro = false;
@@ -42,6 +46,14 @@ validacao.addEventListener("submit", function (event) {
         emailError.textContent = 'Por favor, insira um e-mail válido.';
         emailError.style.display = 'block';
         email.style.borderColor = 'red';
+        temErro = true;
+    }
+
+    // Validação do assunto
+    if (assunto.value.trim() === '') {
+        assuntoError.textContent = 'Você precisa preencher este campo.';
+        assuntoError.style.display = 'block';
+        assunto.style.borderColor = 'red';
         temErro = true;
     }
 
@@ -67,6 +79,7 @@ validacao.addEventListener("submit", function (event) {
     // Exibir os dados no console
     console.log('Nome:', nome.value);
     console.log('Email:', email.value);
+    console.log('Assunto:', assunto.value);
     console.log('Mensagem:', mensagem.value);
 
     // Se não houver erros, exibe a mensagem de sucesso e limpa o formulário
@@ -80,6 +93,7 @@ validacao.addEventListener("submit", function (event) {
     // Limpar os campos após envio
     nome.value = '';
     email.value = '';
+    assunto.value = '';
     mensagem.value = '';
 });
 
@@ -95,6 +109,13 @@ email.addEventListener('input', function () {
     if (email.value.trim() !== '') {
         email.style.borderColor = '';
         emailError.style.display = 'none';
+    }
+});
+
+assunto.addEventListener('input', function () {
+    if (assunto.value.trim() !== '') {
+        assunto.style.borderColor = '';
+        assuntoError.style.display = 'none';
     }
 });
 

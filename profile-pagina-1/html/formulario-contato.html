@@ -18,8 +18,12 @@
         <nav>
             <div>
                 <img class="logo" src="../imagens/logo-oficial/perfil-logo.jpg" alt="logomarca">
-                <h3 class="aba-inicio">Inicio</h3>
-                <h3 class="aba-contato">Contato</h3>
+                <a href='index.html'>
+                    <h3 class="aba-inicio">Início</h3>
+                </a>
+                <a href='formulario-contato.html'>
+                    <h3 class="aba-contato">Contato</h3>
+                </a>
                 <img class="menu" src="../imagens/botao-menu/menu.svg" alt="menu">
             </div>
         </nav>
@@ -30,25 +34,33 @@
             <h2 class='titulo-formulario'>Preencha o Formulário</h2>
             <form id="contactForm">
                 <div>
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo">
+                    <label for="nome">Nome: <span class="obrigatorio">*</span></label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo">
                     <span class="error" id="nomeError"></span>
                     <a class="aviso">Campo obrigatório</a>
                 </div>
                 <div>
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" required
-                        placeholder="Insira um endereço de e-mail válido">
+                    <label for="email">E-mail: <span class="obrigatorio">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="Insira um endereço de e-mail válido">
                     <span class="error" id="emailError"></span>
                     <a class="aviso">Digite um email válido</a>
                 </div>
+
                 <div>
-                    <label for="mensagem">Assunto:</label>
-                    <textarea id="mensagem" name="mensagem" rows="3" required
-                        placeholder="Motivo do contato"></textarea>
+                    <label for="assunto">Assunto: <span class="obrigatorio">*</span></label>
+                    <input type="assunto" id="assunto" name="assunto" placeholder="Insira o assunto">
+                    <span class="error" id="assuntoError"></span>
+                    <a class="aviso">Digite um assunto</a>
+                </div>
+
+                <div>
+                    <label for="mensagem">Mensagem: <span class="obrigatorio">*</span></label>
+                    <textarea id="mensagem" name="mensagem" rows="3" placeholder="Motivo do contato"></textarea>
                     <span class="error" id="mensagemError"></span>
                     <a class="aviso">Campo obrigatório</a>
+                    <p <span class="obrigatorio">*</span> Preenchimento obrigatório</p>
                 </div>
+
 
                 <button class="botao-enviar" type="submit">Enviar</button>
 
