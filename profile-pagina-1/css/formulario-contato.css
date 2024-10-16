@@ -38,11 +38,8 @@
 #contactForm input::placeholder,
 #contactForm textarea::placeholder {
     font-family: sans-serif;
-    /* ou a fonte que você estiver usando */
     font-size: 14px;
-    /* ajuste o tamanho conforme necessário */
     color: #aaa;
-    /* ajuste a cor conforme necessário */
 }
 
 #contactForm textarea {
@@ -122,8 +119,6 @@
     margin-bottom: 0;
  
 }
-
-
 
 .aviso {
     color: red;
