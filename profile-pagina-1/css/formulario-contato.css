@@ -4,15 +4,15 @@
 }
 
 #contactForm {
-    width: 400px;
-    /* largura do formulário */
-    margin: 20px auto;
-    /* centraliza o formulário */
-    padding: 20px;
-    /* espaço interno */
+    width: 100%; /* Altera a largura para 100% */
+    max-width: 400px; /* Define uma largura máxima */
+    margin: 40px auto; /* Centraliza o formulário */
+    padding: 30px;
     border: 1px solid #ccc;
     border-radius: 10px;
     background-color: #f9f9f9;
+    min-height: 350px; /* Mantém a altura mínima */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
 }
 
 #contactForm input,
@@ -126,6 +126,3 @@
     visibility: hidden;
 }
 
-footer {
-    height: 80px;
-}

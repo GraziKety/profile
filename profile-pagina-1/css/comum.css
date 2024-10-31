@@ -1,20 +1,23 @@
 /* Estilo base */
+
 body {
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o body ocupe a altura total da janela */
     align-items: center;
     font-family: sans-serif;
-    line-height: 23px;
+    line-height: 143%;
     background: rgb(242, 241, 241);
     overflow-x: hidden;
     margin: 0;
     padding-top: 1cm;
 }
+
 a {
     text-decoration: none; /* Remove o sublinhado */
     color: black;
 }
-
+   
 header {
     width: 100%;
     padding: 0;
@@ -77,6 +80,42 @@ header {
     color: white;
 }
 
+#menuToggle {
+    position: relative; /* Mantém o menu na posição correta */
+    cursor: pointer; /* Mostra que é clicável */
+}
+
+.menu-options {
+    font-size: 18px; /* Aumenta o tamanho da fonte */
+    letter-spacing: 0.5px; /* Aumenta o espaçamento entre as letras */
+    line-height: 1.5; /* Define o espaço entre as linhas */
+    border: 1px solid #ccc; /* Borda do menu */
+    border-radius: 5px; /* Borda arredondada */
+    position: absolute; /* Para sobrepor ao conteúdo */
+    right: 10px; /* Ajuste a posição conforme necessário */
+    width: 150px; /* Largura do menu */
+    max-height: none; /* Permite que o menu expanda conforme necessário */
+    display: flex;
+    flex-direction: column;
+    /* Outros estilos */
+      }
+
+.menu-options a {
+    display: block; /* Cada link ocupa uma linha */
+    padding: 10px; /* Espaçamento interno */
+    color: black; /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado */
+    margin: 0; /* Remove margens adicionais */
+}
+
+.menu-options a:hover {
+    background-color: rgba(185, 84, 185, 0.2); /* Cor ao passar o mouse */
+}
+
+.menu-options a:last-child {
+    border-bottom: none; /* Remove a linha do último item, opcional */
+}
+
 footer {
     align-items: center;
     background: rgb(49, 49, 49);
@@ -85,6 +124,7 @@ footer {
     justify-content: center;
     width: 100%;
     height: 100px;
+    margin-top: auto; /* Faz o footer ir para o final da página */
 }
 
 footer > p {
