@@ -68,7 +68,7 @@ validacao.addEventListener("submit", function (event) {
     // Se houver erros, exibe a mensagem de erro e interrompe o envio
     if (temErro) {
         formularioEnviado.textContent = 'Preenchimento incompleto!';
-        formularioEnviado.className = 'error'; // Adiciona a classe de erro
+        formularioEnviado.className = 'enviado formularioIncompleto'; // Usa a classe específica para erro
         formularioEnviado.style.display = 'block';
         setTimeout(() => {
             formularioEnviado.style.display = 'none';
@@ -83,7 +83,7 @@ validacao.addEventListener("submit", function (event) {
     console.log('Mensagem:', mensagem.value);
 
     // Se não houver erros, exibe a mensagem de sucesso e limpa o formulário
-    formularioEnviado.textContent = 'Formulário enviado com sucesso!';
+    formularioEnviado.textContent = 'Formulário Submetido!';
     formularioEnviado.className = 'success'; // Adiciona a classe de sucesso
     formularioEnviado.style.display = 'block';
     setTimeout(() => {
@@ -125,4 +125,3 @@ mensagem.addEventListener('input', function () {
         mensagemError.style.display = 'none';
     }
 });
-

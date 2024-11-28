@@ -1,28 +1,28 @@
 .titulo-formulario {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 #contactForm {
     width: 100%; /* Altera a largura para 100% */
-    max-width: 400px; /* Define uma largura máxima */
-    margin: 40px auto; /* Centraliza o formulário */
-    padding: 30px;
+    max-width: 25rem; /* Define uma largura máxima */
+    margin: 2.5rem auto; /* Centraliza o formulário */
+    padding: 1.875rem;
     border: 1px solid #ccc;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     background-color: #f9f9f9;
-    min-height: 350px; /* Mantém a altura mínima */
+    min-height: 21.875rem; /* Mantém a altura mínima */
     box-sizing: border-box; /* Inclui padding e border na largura total */
 }
 
 #contactForm input,
 #contactForm textarea {
-    width: calc(100% - 20px);
+    width: calc(100% - 1.25rem);
     /* Ajusta a largura para evitar que fique grudado */
-    padding: 10px;
-    margin: 10px 0;
+    padding: 0.625rem;
+    margin: 0.625rem 0;
     /* Margem vertical */
-    border-radius: 5px;
+    border-radius: 0.3125rem;
     border: 1px solid #d3d3d3;
     /* Borda cinza claro quando não está em foco */
 }
@@ -50,19 +50,19 @@
 .botao-enviar {
     display: block;
     /* Faz o botão ser um bloco */
-    margin: 20px auto;
+    margin: 1.25rem auto;
     /* Centraliza horizontalmente */
     background-color: transparent;
     color: black;
     border-color: rgb(185, 84, 185);
-    border-radius: 30px;
+    border-radius: 1.875rem;
     border-style: solid;
     cursor: pointer;
     font-size: 13px;
-    height: 50px;
-    padding: 10px 20px;
+    height: 3.125rem;
+    padding: 0.625rem 1.25rem;
     text-align: center;
-    width: 130px;
+    width: 8.125rem;
 }
 
 .botao-enviar:hover {
@@ -71,6 +71,8 @@
 }
 
 .error {
+    position: absolute;
+    max-width: 100%;
     color: red;
     font-size: 12px;
     display: none;
@@ -79,11 +81,12 @@
 
 .enviado {
     font-size: 14px;
-    display: none;
-    /* Começa escondida */
-    margin-top: 10px;
-    transition: opacity 0.5s;
-    /* Transição suave */
+    display: none; /* Começa escondida */
+    margin-top: 0.625rem;
+    transition: opacity 0.5s; /* Transição suave */
+    padding: 0.625rem; /* Espaçamento interno */
+    border-radius: 0.3125rem; /* Bordas arredondadas */
+    text-align: center; /* Centraliza o texto */
 }
 
 #formularioEnviado {
@@ -91,9 +94,9 @@
     /* Inicia visível */
     transition: opacity 0.5s;
     /* Transição suave */
-    padding: 10px;
+    padding: 0.625rem;
     /* Espaçamento interno */
-    border-radius: 5px;
+    border-radius: 0.3125rem;
     /* Bordas arredondadas */
     text-align: center;
     /* Centraliza o texto */
@@ -106,18 +109,15 @@
     /* Texto preto */
 }
 
-#formularioEnviado.error {
-    background-color: #f8d7da;
-    /* Fundo vermelho claro */
-    color: black;
-    /* Texto preto */
+#formularioEnviado.formularioIncompleto {
+    background-color: #f8d7da; /* Fundo vermelho claro */
+    color: black; /* Texto preto */
 }
 
 .obrigatorio {
-    color: red;
+    color: black;
     font-weight: bold;
     margin-bottom: 0;
- 
 }
 
 .aviso {
@@ -125,4 +125,3 @@
     font-size: 13px;
     visibility: hidden;
 }
-

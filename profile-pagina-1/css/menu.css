@@ -1,0 +1,60 @@
+/* Menu estilo */
+.menu {
+    width: 3.125rem;
+    cursor: pointer;
+}
+
+.manutencao {
+    background-color: rgb(207, 113, 113);
+    height: 1.3cm;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    color: white;
+}
+
+#menuToggle {
+    position: relative; /* Mantém o menu na posição correta */
+    cursor: pointer; /* Mostra que é clicável */
+}
+
+.menu-options {
+    font-size: 18px; /* Tamanho da fonte */
+    letter-spacing: 0.03125rem; /* Aumenta o espaçamento entre as letras */
+    line-height: 1.5; /* Define o espaço entre as linhas */
+    border-radius: 0.3125rem; /* Borda arredondada */
+    position: absolute; /* Fixa o menu no topo */
+    right: 0.625rem; /* Ajusta a posição à direita */
+    top: 7.5rem; /* Desloca o menu para baixo, ajustando conforme necessário */
+    width: 9.375rem; /* Largura do menu */
+    max-height: none; /* Permite que o menu expanda conforme necessário */
+    display: flex;
+    flex-direction: column;
+    background-color: transparent; /* Remove o fundo branco do menu */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombrinha leve */
+    border: 1px solid rgba(0, 0, 0, 0.2); /* Borda fina opcional */
+    z-index: 9999; /* Garante que o menu fique acima dos outros elementos */
+}
+.menu-options a {
+    display: block; /* Cada link ocupa uma linha */
+    padding: 0.625rem; /* Espaçamento interno */
+    color: black; /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado */
+    margin: 0; /* Remove margens adicionais */
+}
+
+.menu-options a:hover {
+    background-color: rgba(185, 84, 185, 0.2); /* Cor ao passar o mouse */
+}
+
+.menu-options a:last-child {
+    border-bottom: none; /* Remove a linha do último item, opcional */
+}
+
+

@@ -7,14 +7,13 @@
     <title>Formulário de Contato</title>
     <link rel="stylesheet" href="../css/comum.css">
     <link rel="stylesheet" href="../css/formulario-contato.css">
+    <link rel='stylesheet' href="../css/menu.css">
+    <link rel="stylesheet" href="../css/media.css">
     <link rel="icon" href="../imagens/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
     <header class="header">
-        <div>
-            <label class="manutencao">Site em construção</label>
-        </div>
         <nav>
             <div>
                 <img class="logo" src="../imagens/logo-oficial/perfil-logo.jpg" alt="logomarca">
@@ -26,14 +25,13 @@
                 </a>
                 <img id="menuToggle" class="menu" src="../imagens/botao-menu/menu.svg" alt="menu">
             </div>
-            <div id="menuOptions" class="menu-options" style="display: none;">
-                <a href="#certificados">Certificados</a>
-                <a href="#formacao-academica">Formação Acadêmica</a>
-                <a href="#carreira">Carreira Profissional</a>
-            </div>
         </nav>
     </header>
-
+    <div id="menuOptions" class="menu-options" style="display: none;">
+        <a href="#certificados">Certificados</a>
+        <a href="#formacao-academica">Formação Acadêmica</a>
+        <a href="#carreira">Carreira Profissional</a>
+    </div>
     <main class="perfil-1">
         <section>
             <h2 class='titulo-formulario'>Preencha o Formulário</h2>
@@ -63,14 +61,13 @@
                     <textarea id="mensagem" name="mensagem" rows="3" placeholder="Motivo do contato"></textarea>
                     <span class="error" id="mensagemError"></span>
                     <a class="aviso">Campo obrigatório</a>
-                    <p <span class="obrigatorio">*</span> Preenchimento obrigatório</p>
+                    <p <span class="obrigatorio">*</span>Preenchimento obrigatório</p>
                 </div>
-
 
                 <button class="botao-enviar" type="submit">Enviar</button>
 
                 <div id="formularioEnviado" class="enviado"></div>
-            </form>
+            </f/orm>
         </section>
     </main>
 

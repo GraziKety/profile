@@ -3,10 +3,10 @@
     display: flex;
     flex-direction: column;
     height: 80%;
-    margin: 30px;
+    margin: 1.875rem;
     width: 80%;
     justify-content: center;
-    gap: 20px;
+    gap: 1.25rem;
 }
 
 .perfil-detalhe {
@@ -14,14 +14,14 @@
     display: flex;
     flex-direction: column;
     height: 20%;
-    padding: 0 40px;
+    padding: 0 2.5rem;
     text-align: center;
 }
 
 .perfil-detalhe>h1 {
     color: rgb(185, 84, 185);
     font-size: 70px;
-    margin: 7px 0 15px;
+    margin: 0.4375rem 0 0.9375rem;
 }
 
 .perfil-detalhe-2 {
@@ -29,15 +29,15 @@
     flex-direction: row;
     height: inherit;
     justify-content: space-between;
-    margin: 10px;
-    padding: 0 10%;
+    margin: 0.625rem;
+    padding: 0 6.25%;
     width: 100%;
 }
 
 .perfil-detalhe-2>section {
-    max-height: 400px;
-    min-width: 200px;
-    padding: 30px;
+    max-height: 25rem;
+    min-width: 12.5rem;
+    padding: 1.875rem;
     width: 100%;
 }
 
@@ -47,14 +47,14 @@
 
 .botao {
     border-color: rgb(185, 84, 185);
-    border-radius: 30px;
+    border-radius: 1.875rem;
     border-style: solid;
     cursor: pointer;
     font-size: 13px;
-    height: 50px;
-    padding: 10px 20px;
+    height: 3.125rem;
+    padding: 0.625rem 1.25rem;
     text-align: center;
-    width: 140px;
+    width: 8.75rem;
 }
 
 .botao:hover {
@@ -74,7 +74,6 @@
     justify-content: center;
 }
 
-
 .apresentacao {
     align-items: center;
     background: rgb(185, 84, 185);
@@ -86,14 +85,13 @@
     color: white;
     position: relative;
     text-align: center;
-    top: -100px;
+    top: -6.25rem;
     z-index: 1;
 }
 
 .foto-perfil {
     border-radius: 50%;
     position: relative;
-    top: -100px;
+    top: -6.25rem;
     z-index: 1;
 }
-

@@ -1,20 +1,17 @@
-/* Estilo base */
-
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Garante que o body ocupe a altura total da janela */
+    min-height: 100vh;
     align-items: center;
     font-family: sans-serif;
-    line-height: 143%;
+    line-height: 1.43;
     background: rgb(242, 241, 241);
     overflow-x: hidden;
     margin: 0;
-    padding-top: 1cm;
 }
 
 a {
-    text-decoration: none; /* Remove o sublinhado */
+    text-decoration: none;
     color: black;
 }
    
@@ -26,94 +23,34 @@ header {
 
 .header > nav > div {
     display: flex;
-    justify-content: flex-end; /* Alinha os itens à direita */
+    justify-content: flex-end;
     align-items: center;
-    padding: 10px;
+    padding: 0.625rem;
     background: white;
-    height: 12%;
+    height: 10vh;
 }
 
-/* Logo da empresa */
 .logo {
-    transform: translateY(5px);
-    width: 50px;
-    height: 50px;
-    margin-right: auto; /* Mantém a logo à esquerda */
+    transform: translateY(0.3125rem);
+    width: 3.125rem;
+    height: 3.125rem;
+    margin-right: auto;
 }
 
-/* Menu, aba-inicio e aba-contato alinhados à direita */
 .aba-inicio,
 .aba-contato,
 .menu {
     display: block;
-    margin-left: 20px; /* Adiciona espaçamento entre os itens */
+    margin-left: 1.25rem;
     cursor: pointer;
-    padding: 5px 10px;
-    border-radius: 5px;
+    padding: 0.3125rem 0.625rem;
+    border-radius: 0.3125rem;
     transition: background-color 0.3s;
 }
 
-/* Efeito de hover */
 .aba-inicio:hover,
 .aba-contato:hover {
-    background-color: rgba(185, 84, 185, 0.2); /* Fundo ao passar o mouse */
-}
-
-/* Menu estilo */
-.menu {
-    width: 50px;
-    cursor: pointer;
-}
-
-.manutencao {
-    background-color: rgb(207, 113, 113);
-    height: 1.3cm;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    color: white;
-}
-
-#menuToggle {
-    position: relative; /* Mantém o menu na posição correta */
-    cursor: pointer; /* Mostra que é clicável */
-}
-
-.menu-options {
-    font-size: 18px; /* Aumenta o tamanho da fonte */
-    letter-spacing: 0.5px; /* Aumenta o espaçamento entre as letras */
-    line-height: 1.5; /* Define o espaço entre as linhas */
-    border: 1px solid #ccc; /* Borda do menu */
-    border-radius: 5px; /* Borda arredondada */
-    position: absolute; /* Para sobrepor ao conteúdo */
-    right: 10px; /* Ajuste a posição conforme necessário */
-    width: 150px; /* Largura do menu */
-    max-height: none; /* Permite que o menu expanda conforme necessário */
-    display: flex;
-    flex-direction: column;
-    /* Outros estilos */
-      }
-
-.menu-options a {
-    display: block; /* Cada link ocupa uma linha */
-    padding: 10px; /* Espaçamento interno */
-    color: black; /* Cor do texto */
-    text-decoration: none; /* Remove sublinhado */
-    margin: 0; /* Remove margens adicionais */
-}
-
-.menu-options a:hover {
-    background-color: rgba(185, 84, 185, 0.2); /* Cor ao passar o mouse */
-}
-
-.menu-options a:last-child {
-    border-bottom: none; /* Remove a linha do último item, opcional */
+    background-color: rgba(185, 84, 185, 0.2);
 }
 
 footer {
@@ -123,41 +60,17 @@ footer {
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    height: 100px;
-    margin-top: auto; /* Faz o footer ir para o final da página */
+    height: 6.25rem;
+    margin-top: auto;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
 }
 
 footer > p {
     color: white;
     text-align: center;
     width: auto;
-}
-
-/* Responsividade */
-@media (min-width: 700px) {
-    html, body {
-        height: 100vh;
-    }
-}
-
-@media (max-width: 700px) {
-    .perfil-detalhe-2 {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .perfil-detalhe {
-        padding-bottom: 50px;
-    }
-
-    .apresentacao {
-        margin-top: 100px;
-    }
-}
-
-@media (max-width: 768px) {
-    .perfil-1 {
-        width: 90%;
-    }
 }
