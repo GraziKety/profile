@@ -36,7 +36,7 @@
     max-height: none; /* Permite que o menu expanda conforme necessário */
     display: flex;
     flex-direction: column;
-    background-color: transparent; /* Remove o fundo branco do menu */
+    background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombrinha leve */
     border: 1px solid rgba(0, 0, 0, 0.2); /* Borda fina opcional */
     z-index: 9999; /* Garante que o menu fique acima dos outros elementos */
