@@ -2,7 +2,6 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    height: 80%;
     margin: 1.875rem;
     width: 80%;
     justify-content: center;
@@ -35,7 +34,7 @@
 }
 
 .perfil-detalhe-2>section {
-    max-height: 25rem;
+    max-height: 30rem;
     min-width: 12.5rem;
     padding: 1.875rem;
     width: 100%;
