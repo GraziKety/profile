@@ -1,8 +1,8 @@
-// p/ enviar o formulario
+// Captura o formulário
 const validacao = document.getElementById("contactForm");
 console.log(validacao);
 
-validacao.addEventListener("submit", function (event) {
+validacao.addEventListener("submit", async function (event) {
     event.preventDefault(); // Impede o envio automático do formulário
 
     const nome = document.getElementById('nome');
@@ -76,7 +76,35 @@ validacao.addEventListener("submit", function (event) {
         return;
     }
 
-    // Exibir os dados no console
+    // Adição: Envio assíncrono via fetch API
+    try {
+        const resposta = await fetch("http://localhost:3000/enviar", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                nome: nome.value.trim(),
+                email: email.value.trim(),
+                assunto: assunto.value.trim(),
+                mensagem: mensagem.value.trim()
+            })
+        });
+
+        const resultado = await resposta.json();
+
+        if (resposta.ok) {
+            formularioEnviado.textContent = resultado.mensagem;
+            formularioEnviado.style.color = "green";
+        } else {
+            formularioEnviado.textContent = resultado.mensagem;
+            formularioEnviado.style.color = "red";
+        }
+
+    } catch (erro) {
+        console.error("Erro ao enviar o formulário:", erro);
+        alert("Erro ao enviar formulário. Tente novamente.");
+    }
+
+    // Exibir os dados no console (útil para debug)
     console.log('Nome:', nome.value);
     console.log('Email:', email.value);
     console.log('Assunto:', assunto.value);
