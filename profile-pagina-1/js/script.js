@@ -17,14 +17,12 @@ validacao.addEventListener("submit", async function (event) {
     const mensagemError = document.getElementById('mensagemError');
     const formularioEnviado = document.getElementById('formularioEnviado'); // Mensagem de sucesso
 
-    // Limpar mensagens anteriores
     nomeError.style.display = 'none';
     emailError.style.display = 'none';
     assuntoError.style.display = 'none';
     mensagemError.style.display = 'none';
-    formularioEnviado.style.display = 'none'; // Esconder mensagem anterior
+    formularioEnviado.style.display = 'none'; 
 
-    // Limpar bordas vermelhas
     nome.style.borderColor = '';
     email.style.borderColor = '';
     assunto.style.borderColor = '';
@@ -32,7 +30,6 @@ validacao.addEventListener("submit", async function (event) {
 
     let temErro = false;
 
-    // Validação do nome
     if (nome.value.trim() === '') {
         nomeError.textContent = 'Você precisa preencher este campo.';
         nomeError.style.display = 'block';
@@ -40,8 +37,7 @@ validacao.addEventListener("submit", async function (event) {
         temErro = true;
     }
 
-    // Validação do email
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Expressão p/ validar e-mail
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; 
     if (!emailPattern.test(email.value.trim())) {
         emailError.textContent = 'Por favor, insira um e-mail válido.';
         emailError.style.display = 'block';
@@ -49,7 +45,6 @@ validacao.addEventListener("submit", async function (event) {
         temErro = true;
     }
 
-    // Validação do assunto
     if (assunto.value.trim() === '') {
         assuntoError.textContent = 'Você precisa preencher este campo.';
         assuntoError.style.display = 'block';
@@ -57,7 +52,6 @@ validacao.addEventListener("submit", async function (event) {
         temErro = true;
     }
 
-    // Validação da mensagem
     if (mensagem.value.trim() === '') {
         mensagemError.textContent = 'Você precisa preencher este campo.';
         mensagemError.style.display = 'block';
@@ -65,20 +59,18 @@ validacao.addEventListener("submit", async function (event) {
         temErro = true;
     }
 
-    // Se houver erros, exibe a mensagem de erro e interrompe o envio
     if (temErro) {
         formularioEnviado.textContent = 'Preenchimento incompleto!';
-        formularioEnviado.className = 'enviado formularioIncompleto'; // Usa a classe específica para erro
+        formularioEnviado.className = 'enviado formularioIncompleto'; 
         formularioEnviado.style.display = 'block';
         setTimeout(() => {
             formularioEnviado.style.display = 'none';
-        }, 5000); // Oculta a mensagem após 5 segundos
+        }, 5000); 
         return;
     }
 
-    // Adição: Envio assíncrono via fetch API
     try {
-        const resposta = await fetch("http://localhost:3000/enviar", {
+        const resposta = await fetch("https://profile-service.vercel.app/api/v1/formulario", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
@@ -104,28 +96,24 @@ validacao.addEventListener("submit", async function (event) {
         alert("Erro ao enviar formulário. Tente novamente.");
     }
 
-    // Exibir os dados no console (útil para debug)
     console.log('Nome:', nome.value);
     console.log('Email:', email.value);
     console.log('Assunto:', assunto.value);
     console.log('Mensagem:', mensagem.value);
 
-    // Se não houver erros, exibe a mensagem de sucesso e limpa o formulário
     formularioEnviado.textContent = 'Formulário Submetido!';
-    formularioEnviado.className = 'success'; // Adiciona a classe de sucesso
+    formularioEnviado.className = 'success'; 
     formularioEnviado.style.display = 'block';
     setTimeout(() => {
         formularioEnviado.style.display = 'none';
-    }, 5000); // Oculta a mensagem após 5 segundos
+    }, 5000); 
 
-    // Limpar os campos após envio
     nome.value = '';
     email.value = '';
     assunto.value = '';
     mensagem.value = '';
 });
 
-// Remover erro ao começar a digitar
 nome.addEventListener('input', function () {
     if (nome.value.trim() !== '') {
         nome.style.borderColor = '';
@@ -153,3 +141,4 @@ mensagem.addEventListener('input', function () {
         mensagemError.style.display = 'none';
     }
 });
+
