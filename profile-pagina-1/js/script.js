@@ -77,7 +77,9 @@ validacao.addEventListener("submit", async function (event) {
                 nome: nome.value.trim(),
                 email: email.value.trim(),
                 assunto: assunto.value.trim(),
-                mensagem: mensagem.value.trim()
+                mensagem: mensagem.value.trim(),
+                destino: 'grazielaketyprogramer@gmail.com',
+
             })
         });
 
